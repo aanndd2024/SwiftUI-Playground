@@ -5,5 +5,7 @@
         <page name='ListView'/>
         <page name='GridView'/>
         <page name='MVVM'/>
+        <page name='ScrollView'/>
+        <page name='ViewBuilder'/>
     </pages>
 </playground>
