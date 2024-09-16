@@ -1,7 +1,6 @@
 /*:
- # Data Structure
- ## This set of playgrounds pages is going to contain some examples of how to do different things in Swift.
- I will be including more examples as I find them.
+ # SwiftUI
+ ## SwiftUI is a modern UI framework designed by Apple for constructing user interfaces across various Apple platforms, including iOS, macOS, watchOS, and tvOS.
  
  __Note: Press Ctrl + Shift + R to show rendered markup__
  ***
