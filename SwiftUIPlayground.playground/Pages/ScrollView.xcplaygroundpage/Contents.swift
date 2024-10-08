@@ -3,36 +3,54 @@
 import SwiftUI
 import PlaygroundSupport
 
-struct ContentView: View {
+struct CardView: View {
    
     var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                Group {
+                    CardDetailsView(image: "star.fill", category: "SwiftUI", heading: "Why Swift is Protocol Oriented?", author: "James Paur")
+                    CardDetailsView(image: "star.fill", category: "Mac OSX", heading: "Building a simple editing Application", author: "Gabriel Yadav")
+                    CardDetailsView(image: "star.fill", category: "Flutter", heading: "Flutter - A future programming language", author: "Lawrence Mishra")
+                    CardDetailsView(image: "star.fill", category: "React native", heading: "Building Instagram clone", author: "Simon Gupta")
+                }.frame(width: 300)
+                
+            }
+            Spacer()
+            .padding(.all)
+        }
+        
+    }
+}
+
+struct CardDetailsView:View {
+    var image: String
+    var category: String
+    var heading: String
+    var author: String
+    var body: some View {
         VStack {
-            
-            Image(uiImage: #imageLiteral(resourceName: "Paris.jpg"))
+            Image(systemName: image)
                 .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 450, height: 750)
-                .overlay(
-                    VStack {
-                        Text("Paris")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                            .opacity(0.5)
-                        Image(uiImage: #imageLiteral(resourceName: "ProfilePic.jpeg"))
-                            .resizable()
-                            .frame(width: 70, height: 70)
-                            .clipShape(.circle)
-                        Image(systemName: "star.circle")
-                            .symbolRenderingMode(.palette)
-                            .foregroundStyle(.yellow)
-                            .font(.largeTitle)
-                    }.offset(y:-50)
-                )
+                .aspectRatio(contentMode: .fit)
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(category)
+                        .font(.headline)
+                        .foregroundColor(.secondary)
+                    Text(heading)
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundColor(.primary)
+                        .lineLimit(3)
+                    Text("Written by \(author)".uppercased())
+                }
+                Spacer()
+            }
         }
     }
 }
 
-PlaygroundPage.current.setLiveView(ContentView())
+PlaygroundPage.current.setLiveView(CardView())
 
 //: [Next](@next)
