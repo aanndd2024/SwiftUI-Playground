@@ -130,7 +130,6 @@ struct CustomButtonStyle: ButtonStyle {
             .clipShape(.capsule)
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
     }
-    
 }
 
 PlaygroundPage.current.setLiveView(ButtonView())
