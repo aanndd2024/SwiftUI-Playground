@@ -20,5 +20,6 @@
  - [MVVM](MVVM)
  - [VIPER](VIPER)
  - [SolidPrinciple](SolidPrinciple)
+ - [View Modifier](ViewModifier)
 
  */
