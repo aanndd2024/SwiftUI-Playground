@@ -18,7 +18,7 @@
  - [RestAPICOmpletionHandler](RestAPICOmpletionHandler)
  - [HigherOrderFunction](HigherOrderFunction)
  - [MVVM](MVVM)
- - [VIPER](VIPER)
+ - [VIPER](Viper)
  - [SolidPrinciple](SolidPrinciple)
  - [View Modifier](ViewModifier)
 
