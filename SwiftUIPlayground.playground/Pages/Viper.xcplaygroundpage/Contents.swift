@@ -103,13 +103,4 @@ struct UserDetailsView: View {
 let interactor = UserInteractor()
 let presenter = UserPresenter(interactor: interactor)
 PlaygroundPage.current.setLiveView(UserListView(presenter: presenter))
-
-//struct UserListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let interactor = UserInteractor()
-//        let presenter = UserPresenter(interactor: interactor)
-//        UserListView(presenter: presenter)
-//    }
-//}
-
 //: [Next](@next)
